@@ -11,10 +11,10 @@
 
 import DundretStatusComponents from './direflow-components/dundret-status-components';
 
-DundretStatusComponents.then((element) => {
+DundretStatusComponents.then(() => {
 
   /**
    * Access DOM node when it's mounted
    */
-  console.log('dundret-status-components is mounted on the DOM', element);
+  
 });

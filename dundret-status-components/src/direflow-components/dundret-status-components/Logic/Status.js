@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import LiftsOpen from '../Presentation/LiftsOpen';
+import Temperature from '../Presentation/Temperature';
+import Wind from '../Presentation/Wind';
 
 function Status() {
   const [barnLift, setBarnLift] = useState();
@@ -7,7 +10,6 @@ function Status() {
   const [mellanLift, setMellanLift] = useState();
   const [liikavaara, setLiikavaara] = useState();
   const [temp, setTemp] = useState();
-  const [coldEffect, setColdEffect] = useState();
   const [windSpeed, setWindSpeed] = useState();
 
   useEffect(() => {
@@ -30,7 +32,6 @@ function Status() {
       setMellanLift(data.ML_DRIFT.Value);
       setLiikavaara(data.SL_DRIFT.Value);
       setTemp(data.TT_DAL_PV.Value);
-      setColdEffect(data.WC_DAL_PV.Value);
       setWindSpeed(data.WS_DAL_PV.Value);
       
 
@@ -41,18 +42,16 @@ function Status() {
   };
 
   return (
-    <div>
-      {barnLift}
-      {expr}
-      {fjl}
-      {mellanLift}
-      {liikavaara}
-      <br />
-      {temp}
-      <br />
-      {coldEffect}
-      <br />
-      {windSpeed}
+    <div className='app'>
+      <Temperature temp={temp} />
+      <Wind windSpeed={windSpeed} />
+      <LiftsOpen 
+        barnLift={barnLift}
+        expr={expr}
+        fjl={fjl}
+        mellanLift={mellanLift}
+        liikavaara={liikavaara}      
+      />
     </div>
   )
 }

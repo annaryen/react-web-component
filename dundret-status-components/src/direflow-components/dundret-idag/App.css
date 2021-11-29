@@ -1,31 +1,37 @@
 .app {  
-  min-height: 20%;
-  padding: 0 30px;
+  min-height: 25%;
+  padding: 10px 10px 20px 10px;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   display: flex;
-  justify-content: space-between;
-  font-weight: 600;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  font-weight: 500;
 }
 
 .status-box {
-  min-width: 20%;
+  min-width: 25%;
   margin: 0 10px; 
+  padding: 0 15px 5px 15px;
   border-radius: 6px;
-  background-color: rgb(189, 223, 253);
+}
+
+.value-box {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
 }
 
 h3 {
   color: #006293;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 26px;
+  line-height: 10px;
 }
 
 .value {
   text-align: center;
   padding-top: 10px;
-  font-size: 30px;
+  font-size: 16px;
   color: #006293; 
   line-height: 30px;
 }
@@ -35,7 +41,20 @@ h3 {
   color: black;
 }
 
-@media screen and (max-width: 700px) {
+.open {
+  color: green;
+}
+
+.closed {
+  color: red;
+}
+
+@media screen and (max-width: 800px) {
+  .status-box {
+    width: 40%;
+    margin: 0 10px 20px 10px;
+    min-height: 200px;    
+  }
   .value {
     font-size: 28px;
   }
@@ -45,6 +64,16 @@ h3 {
 }
 
 @media screen and (max-width: 500px) {
+  .app {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    }
+  .status-box {
+    width: 100%;
+    margin: 0 0 10px 0;
+    min-height: 200px;    
+  }
   .value {
     font-size: 24px;
   }

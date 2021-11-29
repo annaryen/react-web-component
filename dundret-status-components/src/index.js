@@ -10,8 +10,16 @@
  */
 
 import DundretStatusComponents from './direflow-components/dundret-status-components';
+import DundretIdag from './direflow-components/dundret-idag';
 
 DundretStatusComponents.then(() => {
+
+  /**
+   * Access DOM node when it's mounted
+   */
+  
+});
+DundretIdag.then(() => {
 
   /**
    * Access DOM node when it's mounted

@@ -1,0 +1,56 @@
+.app {  
+  min-height: 20%;
+  padding: 0 30px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+.status-box {
+  min-width: 20%;
+  margin: 0 10px; 
+  border-radius: 6px;
+  background-color: rgb(189, 223, 253);
+}
+
+h3 {
+  color: #006293;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.value {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 30px;
+  color: #006293; 
+  line-height: 30px;
+}
+
+.value-text {
+  font-size: 16px;
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .value {
+    font-size: 28px;
+  }
+  .value-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .value {
+    font-size: 24px;
+  }
+  .value-text {
+    font-size: 12px;
+  }
+}
+
+

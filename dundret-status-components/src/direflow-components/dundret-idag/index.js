@@ -4,7 +4,7 @@ import App from './App';
 export default DireflowComponent.create({
   component: App,
   configuration: {
-    tagname: 'dundret-status-components',
+    tagname: 'dundret-idag',
     useShadow: false,
   },
   plugins: [

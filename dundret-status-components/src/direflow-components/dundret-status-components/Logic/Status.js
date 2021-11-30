@@ -25,7 +25,6 @@ function Status() {
       }
 
       const data = await response.json();
-      console.log(data);
       setBarnLift(data.BB_DRIFT.Value);
       setExpr(data.EX_DRIFT.Value);
       setFjl(data.FJL_DRIFT.Value);

@@ -35,7 +35,6 @@ function Status() {
       }
 
       const data = await response.json();
-      console.log(data);
       // Lift drift
       setBarnLift(data.BB_DRIFT.Value);
       setExpr(data.EX_DRIFT.Value);
@@ -56,7 +55,6 @@ function Status() {
 
     } catch (error) {
       console.log(error);
-      console.log("Custom error message");
     }
   };
 

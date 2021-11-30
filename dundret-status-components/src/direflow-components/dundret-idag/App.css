@@ -41,22 +41,12 @@ h3 {
   color: black;
 }
 
-.open {
-  color: #008450;
-}
 
-.closed {
-  color: #B81D13;
-}
-
-.ready {
-  color: #EFB700;
-}
-
-.open, .closed, .ready {
-  margin-left: 10px;
-  font-size: 13px;
+.status-text {
+  color: #50514F;
+  font-size: 12px;
   font-weight: 600;
+  margin-top: 3px;
 }
 
 /** Status dots **/
@@ -68,6 +58,7 @@ h3 {
 
 .dots {
   display: flex;
+  margin-left: 15px;
   
 }
 

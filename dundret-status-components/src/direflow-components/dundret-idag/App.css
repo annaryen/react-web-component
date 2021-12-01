@@ -50,7 +50,7 @@ h3 {
 }
 
 /** Status dots **/
-.dotsNvalue {
+.dots-and-text {
   width: 50%;
   display: flex;
   justify-content: end;
@@ -62,7 +62,7 @@ h3 {
   
 }
 
-.dot, #dotOpen, #dotReady, #dotClosed {
+.dot, #dot-open, #dot-ready, #dot-closed {
   height: 20px;
   width: 20px;
   border-radius: 50%;
@@ -73,15 +73,15 @@ h3 {
   background-color: #bbb;  
 }
 
-#dotOpen { 
+#dot-open { 
   background-color:#008450; 
 }
 
-#dotReady {  
+#dot-ready {  
   background-color:#EFB700;
 } 
 
-#dotClosed {  
+#dot-closed {  
   background-color:#B81D13;
 } 
 

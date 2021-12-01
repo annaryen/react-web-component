@@ -2,36 +2,36 @@ import React from 'react'
 
 function Liftar({ barnLift, expr, fjl, mellanLift, liikavaara, barnReady, exprReady, fjlReady, mellanReady, liikavaaraReady }) {
   
-  const liftOpen = <span className="dotsNvalue">
+  const liftOpen = <span className="dots-and-text">
                       <span className="status-text">
                         Öppen
                       </span>
                       <span className="dots">
-                        <span id="dotOpen"></span>
+                        <span id="dot-open"></span>
                         <span className="dot"></span>
                         <span className="dot"></span>
                       </span>                    
                     </span>;
 
-  const liftReady = <span className="dotsNvalue">
+  const liftReady = <span className="dots-and-text">
                       <span className="status-text">
                         Startklar
                       </span>
                       <span className="dots">
                         <span className="dot"></span>
-                        <span id="dotReady"></span>
+                        <span id="dot-ready"></span>
                         <span className="dot"></span>
                       </span>
                     </span>;
 
-  const liftClosed = <span className="dotsNvalue">
+  const liftClosed = <span className="dots-and-text">
                         <span className="status-text">
                           Stängd
                         </span>
                         <span className="dots">
                           <span className="dot"></span>
                           <span className="dot"></span>
-                          <span id="dotClosed"></span>
+                          <span id="dot-closed"></span>
                         </span>
                       </span>;
 

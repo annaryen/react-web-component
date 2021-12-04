@@ -4,15 +4,19 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-weight: 500;
+  flex-wrap: wrap;
 }
 
 .status-box {
-  width: 25%;
+  min-width: 320px;
+  max-width: 400px;
   margin: 0 10px; 
   padding: 0 15px 5px 15px;
-  border-radius: 6px;
+  background-color: #00619e26;
+  border-radius: 4px;
+  height: 250px;
 }
 
 .value-box {
@@ -22,7 +26,6 @@
 }
 
 h3 {
-  color: #006293;
   font-weight: 600;
   font-size: 26px;
   line-height: 10px;
@@ -74,7 +77,7 @@ h3 {
 }
 
 #dot-open { 
-  background-color:#008450; 
+  background-color:#48bf53; 
 }
 
 #dot-ready {  
@@ -86,10 +89,12 @@ h3 {
 } 
 
 @media screen and (max-width: 800px) {
+  .app {
+    justify-content: center;
+  }
   .status-box {
-    width: 45%;
     margin: 0 10px 20px 10px;
-    min-height: 200px;    
+    height: auto;   
   }
   .value {
     font-size: 28px;
@@ -102,13 +107,12 @@ h3 {
 @media screen and (max-width: 500px) {
   .app {
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     }
   .status-box {
     width: 100%;
     margin: 0 0 10px 0;
-    min-height: 200px;    
+    height: auto;  
   }
   .value {
     font-size: 24px;

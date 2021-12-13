@@ -3,7 +3,7 @@ import React from 'react'
 function Snow() {
   return (
     <div className="status-box">
-     <p className="value">30 cm <br /> <span className="value-text">Snödjup</span></p>
+     <p className="value">- cm <br /> <span className="value-text">Snödjup</span></p>
     </div>
   )
 }

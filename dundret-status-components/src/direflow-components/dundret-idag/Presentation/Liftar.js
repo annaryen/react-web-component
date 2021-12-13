@@ -54,11 +54,11 @@ function Liftar({ barnLift, expr, fjl, mellanLift, liikavaara, barnReady, exprRe
   return (
     <div className="status-box">
       <h3>Liftar</h3>
-      <p className="value-box">Barnliften {bb} </p>
+      <p className="value-box">Snölandsliften {bb} </p>
       <p className="value-box">Dundret Express {ex} </p>
       <p className="value-box">Fjälliften {fj} </p>
       <p className="value-box">Mellanliften {ml} </p>
-      <p className="value-box">Liikavaaraliften {sl} </p>
+      <p className="value-box">Stugliften {sl} </p>
     </div>
   )
 }

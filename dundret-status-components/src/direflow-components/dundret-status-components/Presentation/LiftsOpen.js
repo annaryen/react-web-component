@@ -20,7 +20,7 @@ function LiftsOpen({ barnLift, expr, fjl, mellanLift, liikavaara }) {
 
   return (
     <div className="status-box">
-     <p className="value">{numbersOpen} <br /> <span className="value-text">Liftar öppna</span></p>
+     <p className="value">{numbersOpen} <br /> <span className="value-text">Öppna liftar</span></p>
     </div>
   )
 }

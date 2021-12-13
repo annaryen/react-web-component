@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Liftar from '../Presentation/Liftar';
+import Snow from '../Presentation/Snow';
 import Weather from '../Presentation/Weather';
 
 function Status() {
@@ -60,6 +61,12 @@ function Status() {
 
   return (
     <div className="app">
+       <Weather 
+        temp={temp}
+        coldEffect={coldEffect}
+        windSpeed={windSpeed}
+      />
+      <Snow />
       <Liftar 
         barnLift={barnLift}
         expr={expr}
@@ -72,12 +79,7 @@ function Status() {
         mellanReady={mellanReady}
         liikavaaraReady={liikavaaraReady}
       />
-      
-      <Weather 
-        temp={temp}
-        coldEffect={coldEffect}
-        windSpeed={windSpeed}
-      />
+    
     </div>
   )
 }

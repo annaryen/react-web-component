@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import LiftsOpen from '../Presentation/LiftsOpen';
+import SlopesOpen from '../Presentation/SlopesOpen';
+import Snow from '../Presentation/Snow';
 import Temperature from '../Presentation/Temperature';
 import Wind from '../Presentation/Wind';
 
@@ -36,14 +38,12 @@ function Status() {
 
     } catch (error) {
       console.log(error);
-      console.log("Custom error message");
     }
   };
 
   return (
     <div className='app'>
       <Temperature temp={temp} />
-      <Wind windSpeed={windSpeed} />
       <LiftsOpen 
         barnLift={barnLift}
         expr={expr}
@@ -51,6 +51,8 @@ function Status() {
         mellanLift={mellanLift}
         liikavaara={liikavaara}      
       />
+      <SlopesOpen />
+      <Snow />
     </div>
   )
 }

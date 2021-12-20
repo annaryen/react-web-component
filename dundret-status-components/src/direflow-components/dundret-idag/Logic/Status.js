@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Liftar from '../Presentation/Liftar';
-import Snow from '../Presentation/Snow';
 import Weather from '../Presentation/Weather';
 
 function Status() {
@@ -66,7 +65,6 @@ function Status() {
         coldEffect={coldEffect}
         windSpeed={windSpeed}
       />
-      <Snow />
       <Liftar 
         barnLift={barnLift}
         expr={expr}

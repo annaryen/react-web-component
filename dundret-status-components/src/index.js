@@ -11,6 +11,7 @@
 
 import DundretStatusComponents from './direflow-components/dundret-status-components';
 import DundretIdag from './direflow-components/dundret-idag';
+import DundretWeather from './direflow-components/dundret-weather';
 
 DundretStatusComponents.then(() => {
 
@@ -20,6 +21,13 @@ DundretStatusComponents.then(() => {
   
 });
 DundretIdag.then(() => {
+
+  /**
+   * Access DOM node when it's mounted
+   */
+  
+});
+DundretWeather.then(() => {
 
   /**
    * Access DOM node when it's mounted

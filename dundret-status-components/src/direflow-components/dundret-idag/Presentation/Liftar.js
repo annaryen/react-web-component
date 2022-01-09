@@ -59,6 +59,11 @@ function Liftar({ barnLift, expr, fjl, mellanLift, liikavaara, barnReady, exprRe
       <p className="value-box">Fjälliften {fj} </p>
       <p className="value-box">Mellanliften {ml} </p>
       <p className="value-box">Stugliften {sl} </p>
+      <div className="status-explained">
+        <span id="status-closed">Stängd = Liften är inte igång</span>
+        <span id="status-ready">Startklar = Liften förbereds för dagen</span>
+        <span id="status-open">Öppen = Liften snurrar</span>
+      </div>
     </div>
   )
 }

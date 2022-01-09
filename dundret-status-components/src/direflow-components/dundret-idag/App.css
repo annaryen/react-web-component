@@ -1,24 +1,3 @@
-.app {  
-  min-height: 25%;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  display: flex;
-  justify-content: space-between;
-  font-weight: 500;
-  flex-wrap: wrap;
-}
-
-.status-box {
-  min-width: 300px;
-  max-width: 400px;
-  margin: 0 10px 10px; 
-  padding: 0 15px 5px 15px;
-  background-color: #F7F4F1;
-  border-radius: 4px;
-  height: 250px;
-  border: 1px solid #ece8e4;
-}
-
 .value-box {
   display: flex;
   justify-content: space-between;
@@ -26,22 +5,7 @@
 }
 
 h3 {
-  font-weight: 600;
-  font-size: 26px;
   line-height: 10px;
-}
-
-.value {
-  text-align: center;
-  padding-top: 10px;
-  font-size: 16px;
-  color: #006293; 
-  line-height: 30px;
-}
-
-.value-text {
-  font-size: 16px;
-  color: black;
 }
 
 
@@ -87,39 +51,3 @@ h3 {
 #dot-closed {  
   background-color:#B81D13;
 } 
-
-@media screen and (max-width: 800px) {
-  .app {
-    justify-content: center;
-  }
-  .status-box {
-    margin: 0 10px 20px 10px;
-    height: auto;   
-  }
-  .value {
-    font-size: 28px;
-  }
-  .value-text {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .app {
-    flex-direction: column;
-    align-items: center;
-    }
-  .status-box {
-    width: 90%;
-    margin: 0 0 10px 0;
-    height: auto;  
-  }
-  .value {
-    font-size: 24px;
-  }
-  .value-text {
-    font-size: 12px;
-  }
-}
-
-

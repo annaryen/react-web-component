@@ -1,4 +1,4 @@
-.app { 
+.dundret-status { 
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -22,7 +22,8 @@
 }
 
 .webcam-svg {
-  margin-top: -15px;
+  margin-top: -12px;
+  margin-bottom: -5px;
 }
 
 

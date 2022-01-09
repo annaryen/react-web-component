@@ -41,7 +41,7 @@ function Status() {
   };
 
   return (
-    <div className='app'>
+    <div className='api-component dundret-status'>
       <Temperature temp={temp} />
       <Wind windSpeed={windSpeed} />
       <LiftsOpen 
